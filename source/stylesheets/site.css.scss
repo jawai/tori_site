@@ -13,10 +13,7 @@ body {
 ///*** Header ***///
 //Bar background color
 .nav {
-  background-color: #fff;
-  font-weight: bold;
-  height: 4.25rem;
-  font-size: 1.5em;
+  background-color: #fff !important;
   position: fixed !important; //for fixed nav
   top: 0;
   left: 0;
