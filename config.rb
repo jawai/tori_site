@@ -37,10 +37,17 @@ page '/*.txt', layout: false
 #   end
 # end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+  deploy.branch = 'master'
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+ activate :minify_css
+ activate :minify_javascript
+ activate :minify_html
+end
