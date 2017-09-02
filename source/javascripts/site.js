@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
   (function blink() {
-    $('.blink_me').fadeOut(500).fadeIn(500, blink);
+    $('.blink_me').fadeOut(1500).fadeIn(100, blink);
   })();
 
   (function() {
