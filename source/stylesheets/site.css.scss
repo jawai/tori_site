@@ -91,7 +91,7 @@ body {
 }
 
 .icon3 {
-  width:75%;
+  width:60%;
   height:70%;
   margin-left: 0px !important;
   margin-top: -500px;
@@ -102,7 +102,7 @@ body {
 .icon4 {
   width:70%;
   height:70%;
-  margin-left: 750px !important;
+  margin-left: 550px !important;
   margin-top: -500px;
   position: absolute;
   z-index: 1;
@@ -129,23 +129,30 @@ footer .content {
   color: #000;
 }
 
-
 ///*** Mobile ***///
 
 @media screen and (max-width: 768px) {
   .icon {
-    opacity: 0;
+    display: none;
   }
 
   .icon2 {
-    opacity: 0;
+    display: none;
   }
 
   .icon3 {
-    opacity: 0;
+    display: none;
   }
 
   .icon4 {
-    opacity: 0;
+    display: none;
+  }
+
+  .rainbow1 {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
